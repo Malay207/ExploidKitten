@@ -13,8 +13,8 @@ var redisClient *redis.Client
 func init() {
 	// Initialize Redis client
 	redisClient = redis.NewClient(&redis.Options{
-		Addr:     "redis-13575.c301.ap-south-1-1.ec2.cloud.redislabs.com:13575",
-		Password: "nbJMe8VgFWkC7ElhEyC0LVCN02JNVfJ2",
+		Addr:     "redis-16995.c261.us-east-1-4.ec2.redns.redis-cloud.com:16995",
+		Password: "PHHFCclExab5q2fiXMGpfu0JzemMYeKb",
 		DB:       0, // use default DB
 	})
 

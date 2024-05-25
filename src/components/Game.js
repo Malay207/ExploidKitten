@@ -49,7 +49,7 @@ const Game = () => {
   }, [game.gameWon])
   
 const getpoint=async (name)=>{
-  const res=await fetch(`https://go-backend-api-6.onrender.com/leaderboard/${name}`,{
+  const res=await fetch(`https://go-backend-api-7.onrender.com/leaderboard/${name}`,{
     method:"GET",
     headers:{
       "Content-Type":"application/json",
@@ -61,7 +61,7 @@ const getpoint=async (name)=>{
 }
 const updatepoint=async (name)=>{
   // eslint-disable-next-line
-  const res=await fetch(`https://go-backend-api-6.onrender.com/update-points`,{
+  const res=await fetch(`https://go-backend-api-7.onrender.com/update-points`,{
     method:"POST",
     headers:{
       "Content-Type":"application/json",
@@ -76,7 +76,7 @@ const updatepoint=async (name)=>{
  }, 3000);
 }
 const logout=()=>{
-  localStorage.removeItem('username');
+  localStorage.removeItem('exploit-kitten-userdata');
   navigate('/signup');
 }
   return (

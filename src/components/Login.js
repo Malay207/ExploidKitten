@@ -5,7 +5,7 @@ const Login = () => {
     const naviagte=useNavigate();
     const [email, setemail] = useState({email: "",password:""})
     const login=async ()=>{
-        const response=await fetch("https://go-backend-api-6.onrender.com/login-user",{
+        const response=await fetch("https://go-backend-api-7.onrender.com/login-user",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -18,6 +18,7 @@ const Login = () => {
         setemail({email:"",password:""})
         localStorage.setItem("exploit-kitten-userdata",JSON.stringify(data));
         naviagte("/");
+        window.location.reload();
     }
     const onchange=(e)=>{
         setemail({...email,[e.target.name]:e.target.value})
